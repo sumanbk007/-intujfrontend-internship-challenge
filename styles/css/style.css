@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 7.1rem;
+  font-weight: 800;
+}
+
+/* Base Styles */
+.logo,
+.nav-link,
+.auth-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.links-container {
+  display: flex;
+}
+
+.nav-links,
+.auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #555;
+}
+
+.auth-link {
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.start-free {
+  background: #4F46BA;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* State Styles */
+.auth-link:hover,
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* This CSS example uses CSS custom properties for consistency and ease of maintenance. */
+.footer {
+  color: #181433;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.footer-content .footer-section h4 {
+  font-size: 20px;
+}
+.footer-content .footer-section p,
+.footer-content .footer-section a {
+  color: #181433;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.footer-content .footer-description {
+  width: 20rem;
+}
+.footer-content .footer-section p {
+  margin: 1.2rem 0;
+  color: #757095;
+  line-height: 2rem;
+}
+.footer-content .footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.footer-content .footer-section ul li {
+  margin-block: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+.social-links i {
+  color: #3734A9;
+}
+
+.footer-section li {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #181433;
+}
+
+.news-letter {
+  display: flex;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input.input-newsletter {
+  height: 5rem;
+  border-radius: 0.8rem;
+  border: none;
+  padding: 1rem;
+  background-color: #EEEEFF;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+input.input-newsletter::placeholder {
+  padding-left: 1.2rem;
+  font-size: 1.8rem;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.newsletter-header {
+  margin-bottom: 5px;
+}
+
+.footer-section-newsletter p {
+  width: 35rem;
+}
+
+.news-letter button {
+  height: 5rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border: none;
+  width: 14rem;
+  background-color: #3734A9;
+  font-size: 1.8rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.footer-divider {
+  border: 0;
+  height: 2px;
+  background-color: #E5E5EA;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  margin-block: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  .footer-divider {
+    width: 90%;
+  }
+}
+.call-to-action {
+  text-align: center;
+  background-color: #3734A9;
+  margin: 8rem 10rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  height: 40rem;
+  position: relative;
+}
+.call-to-action .centered-content {
+  position: absolute;
+  top: 28%;
+  left: 25%;
+  color: #FFFFFF;
+}
+.call-to-action h2 {
+  width: 70rem;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  font-weight: 800;
+}
+.call-to-action button {
+  width: 22rem;
+  height: 6.5rem;
+  background-color: #FF7F5C;
+  border-radius: 1rem;
+  border: none;
+  margin-block: 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.call-to-action .svg1 {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  height: 1.7rem;
+  width: 10.5rem;
+}
+.call-to-action .svg2 {
+  position: absolute;
+  top: 49%;
+  right: 10%;
+  height: 16.1rem;
+  width: 16.1rem;
+}
+.call-to-action .svg3 {
+  position: absolute;
+  top: 22%;
+  left: 22.3%;
+  height: 14.8rem;
+  width: 14.8rem;
+}
+
+.svg4 {
+  position: absolute;
+  top: 55%;
+  left: 15%;
+  height: 10.2rem;
+  width: 1.6rem;
+}
+
+.svg5 {
+  position: absolute;
+  top: 47%;
+  left: 27%;
+  height: 8.3rem;
+  width: 8.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .call-to-action {
+    text-align: center;
+    background-color: #3734A9;
+    margin: 3rem 2rem;
+    border-radius: 1rem;
+    height: 35rem;
+  }
+  .call-to-action .centered-content {
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    color: #FFFFFF;
+  }
+  .call-to-action h2 {
+    width: 30rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .call-to-action button {
+    width: 14rem;
+    height: 5rem;
+    margin-block: 1rem;
+    font-size: 1.3rem;
+  }
+  .call-to-action .svg1 {
+    top: 9%;
+    right: 9%;
+    height: 1rem;
+    width: 5.5rem;
+  }
+  .call-to-action .svg2 {
+    top: 30%;
+    right: 7%;
+    height: 8.1rem;
+    width: 8.1rem;
+  }
+  .call-to-action .svg3 {
+    top: 11%;
+    left: 7.3%;
+    height: 4.8rem;
+    width: 4.8rem;
+  }
+  .svg4 {
+    top: 28%;
+    left: 10%;
+    height: 5.2rem;
+    width: 1.6rem;
+  }
+  .svg5 {
+    top: 21%;
+    left: 13%;
+    height: 4.3rem;
+    width: 4.3rem;
+  }
+}
+.faq {
+  position: relative;
+}
+
+.faq-content {
+  margin-inline: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5rem;
+}
+.faq-content h1 {
+  line-height: 7.6rem;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-direct-mail {
+  width: 40.1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #CFCFCF;
+  border-radius: 1rem;
+}
+.faq-direct-mail h3 {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  color: #000000;
+  margin-block: 3rem;
+}
+.faq-direct-mail p {
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  letter-spacing: 2%;
+  margin-block: 1rem;
+  text-align: center;
+}
+.faq-direct-mail button {
+  margin: 6rem 0 3rem 0;
+  width: 33.7rem;
+  height: 7.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  background-color: #FF7F5C;
+  color: #FFFFFF;
+  border: none;
+}
+
+.answer {
+  display: none;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  font-weight: 400;
+}
+
+.question-title {
+  margin: 0;
+  color: #000000;
+  font-size: 2.2rem;
+}
+
+.faq-detail {
+  width: 75.1rem;
+  height: 51.2rem;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin-block: 1rem;
+  border: 1px solid #CFCFCF;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.question-header {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+
+.toggle-answer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 3.5rem;
+  color: #000000;
+}
+
+.message-icon {
+  font-size: 6rem;
+  margin-top: 7rem;
+}
+
+.faq-style-svg .faq-svg1 {
+  position: absolute;
+  top: 13%;
+}
+.faq-style-svg .faq-svg2 {
+  position: absolute;
+  right: 5%;
+  top: 1%;
+}
+
+/*# sourceMappingURL=style.css.map */
