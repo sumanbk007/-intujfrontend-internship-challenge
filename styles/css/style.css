@@ -464,17 +464,18 @@ input:focus::placeholder {
   font-weight: 600;
   color: #1B1C31;
 }
-.recent-blog .blog-content {
+
+.blog-content {
   margin-block: 2rem;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
 }
-.recent-blog .blog-content .bog-card {
+.blog-content .bog-card {
   width: 382px;
   height: 436px;
 }
-.recent-blog .blog-content .bog-card p {
+.blog-content .bog-card p {
   width: 310px;
 }
 
@@ -565,7 +566,8 @@ input:focus::placeholder {
   right: -35px;
   height: 256px;
 }
-.stats-section img {
+.stats-section .stat-image img {
+  display: none;
   position: absolute;
   top: 15%;
   right: 0;
@@ -615,11 +617,8 @@ input:focus::placeholder {
   .stats-details .vertical-line::after {
     display: none;
   }
-  img {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    height: 120px;
+  .stat-image img {
+    display: none;
   }
 }
 .testimonial-section {
@@ -703,7 +702,6 @@ input:focus::placeholder {
   }
   .testimonial-section .testimonial-style-image {
     display: none;
-    /* Hide the image on smaller screens */
   }
   .testimonial-section .testimonial-content {
     flex-direction: column;
@@ -713,32 +711,142 @@ input:focus::placeholder {
   .testimonial-section .testimonial-content .quote-symbol1,
   .testimonial-section .testimonial-content .quote-symbol2 {
     display: none;
-    /* Hide quote symbols on smaller screens */
   }
   .testimonial-section .testimonial-content .testimonial-detail {
     flex-direction: column;
-    /* Arrange testimonial cards in a column */
     gap: 2rem;
-    /* Adjust padding for smaller screens */
   }
   .testimonial-section .testimonial-content .testimonial-detail .card-text {
     width: auto;
-    /* Adjust text width to fit the screen */
     height: auto;
-    /* Adjust text height to fit the content */
     margin-bottom: 1rem;
-    /* Adjust margin for smaller screens */
   }
   .testimonial-section .testimonial-content .testimonial-detail .card-image {
     width: auto;
-    /* Adjust image width to fit the screen */
     height: auto;
-    /* Adjust image height to fit the content */
   }
-  .testimonail-card {
+  .testimonial-section .testimonial-content .testimonial-detail .testimonail-card {
+    border: 1px solid #CFCFCF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 380px;
     flex-direction: column;
     height: auto;
-    width: auto;
+    padding: 2rem;
+  }
+  .testimonial-section .testimonial-content .testimonial-detail .testimonail-card .card-text p {
+    font-size: 2.5rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+    height: auto;
+    width: 250px;
+    margin-bottom: 3rem;
+  }
+}
+.feature-section {
+  margin-inline: 8rem;
+  background-color: #C9E7F2;
+  padding: 5rem 8rem;
+}
+.feature-section p {
+  font-size: 1.6rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.feature-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card:not(:last-child) {
+  border: 1px solid #ABC8D2;
+  padding-inline: 2rem;
+}
+
+.feature-card {
+  width: 330px;
+  height: 338px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-radius: 1rem;
+  margin-top: 4rem;
+}
+.feature-card i {
+  font-size: 4rem;
+}
+.feature-card h3 {
+  font-size: 2.2rem;
+  line-height: 3.5rem;
+  font-weight: 800;
+  color: #000000;
+}
+.feature-card .row1, .feature-card .row2 {
+  border: 1px solid #ABC8D2;
+  height: 153px;
+  width: 330px;
+  padding-inline: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+.feature-card .row1 {
+  margin-bottom: 16px;
+}
+.feature-card .row2 {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .feature-section {
+    margin-inline: 2rem;
+    padding: 2rem 1rem;
+  }
+  .feature-section h1 {
+    font-size: 3rem;
+  }
+  .feature-section p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+  .feature-detail {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .feature-card {
+    width: 330px;
+    padding-block: 2rem;
+    gap: 2rem;
+    height: auto;
+  }
+  .feature-card i {
+    font-size: 3rem;
+  }
+  .feature-card h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .feature-card .row1,
+  .feature-card .row2 {
+    border: 1px solid #ABC8D2;
+    height: auto;
+    width: 325px;
+    padding: 2rem 2rem;
+  }
+  .feature-card .row1 {
+    margin-bottom: 1px;
+  }
+  .feature-card .row2 {
+    margin-top: 1px;
   }
 }
 
