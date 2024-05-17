@@ -567,7 +567,6 @@ input:focus::placeholder {
   height: 256px;
 }
 .stats-section .stat-image img {
-  display: none;
   position: absolute;
   top: 15%;
   right: 0;
@@ -617,7 +616,7 @@ input:focus::placeholder {
   .stats-details .vertical-line::after {
     display: none;
   }
-  .stat-image img {
+  img {
     display: none;
   }
 }
@@ -848,6 +847,305 @@ input:focus::placeholder {
   .feature-card .row2 {
     margin-top: 1px;
   }
+}
+.column1-testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 402px;
+  height: 197px;
+  position: relative;
+  padding: 1rem;
+  background-color: #C4C4C4;
+  border-radius: 1rem;
+}
+.column1-testimonial .quote-symbol1 {
+  position: absolute;
+  top: -7.5%;
+  left: 16%;
+}
+.column1-testimonial .quote-symbol1 i {
+  font-size: 3rem;
+}
+.column1-testimonial p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.column1-testimonial h5 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+
+.about-us {
+  background-color: #F5F6F8;
+  padding: 5rem 5rem;
+}
+.about-us h2 {
+  font-size: 5.6rem;
+  line-height: 6.6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.about-us p {
+  font-weight: 400;
+}
+
+.column1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-block: 6rem;
+  flex-wrap: wrap;
+}
+.column1 p {
+  font-size: 1.6rem;
+  line-height: 2.9rem;
+}
+
+.column2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.column2 .column2-detail {
+  width: 380px;
+  height: 382px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid #DBE4E9;
+  padding-inline: 2rem;
+  border-radius: 1rem;
+}
+.column2 .column2-detail p {
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+.column2 .column2-detail .column2-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+.column2 .column2-detail .column2-card i {
+  font-size: 4rem;
+}
+.column2 .column2-detail .column2-card h3 {
+  font-size: 3rem;
+  line-height: 3.4rem;
+  font-weight: 800;
+}
+.column2 .column2-detail .column2-card p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+}
+
+.column3 {
+  margin-block: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.column3 .img1 {
+  position: absolute;
+  top: 0;
+  left: 0.1%;
+}
+.column3 .img2 {
+  position: absolute;
+  top: 71%;
+  left: 0.1%;
+}
+.column3 .img3 {
+  position: absolute;
+  top: 25%;
+  left: 88.3%;
+}
+.column3 .img4 {
+  position: absolute;
+  top: -5%;
+  left: 88.3%;
+}
+.column3 .track-container {
+  position: relative;
+  width: 603px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+  justify-content: flex-end;
+  background: rgb(216, 227, 220);
+  background: linear-gradient(90deg, rgb(216, 227, 220) 0%, rgb(225, 224, 230) 31%, rgb(221, 226, 233) 100%);
+}
+.column3 .live-track-payment {
+  width: 556px;
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 999;
+}
+.column3 .live-track-payment .user-contnet {
+  width: 433px;
+  height: 85px;
+  background-color: #FFFFFF;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-inline: 1rem;
+}
+.column3 .live-track-payment .user-contnet .user-detail button {
+  height: 26px;
+  width: 86px;
+  border: none;
+  border-radius: 1rem;
+  color: #3734A9;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  font-weight: 700;
+}
+.column3 .live-track-payment .user-contnet .user-detail p {
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+.column3 .live-track-features {
+  width: 490px;
+  height: 469px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.column3 .live-track-features h4 {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  color: #3734A9;
+}
+.column3 .live-track-features h2 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 800;
+}
+.column3 .live-track-features p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+.column3 .live-track-features hr {
+  width: 100%;
+}
+.column3 .live-track-features .benefit-list span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.column3 .live-track-features .benefit-list span i {
+  color: #FDBC64;
+  font-size: 2.4rem;
+}
+.column3 .live-track-features .benefit-list span p {
+  font-size: 1.9rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+
+.column4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+.column4 .live-track-features {
+  width: 490px;
+  height: 469px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.column4 .live-track-features h4 {
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  font-weight: 700;
+  color: #3734A9;
+}
+.column4 .live-track-features h2 {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 800;
+}
+.column4 .live-track-features p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
+}
+.column4 .column1-testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 497px;
+  height: 152px;
+  position: relative;
+  padding: 1rem;
+  background-color: #C4C4C4;
+  border-radius: 1rem;
+}
+.column4 .column1-testimonial .quote-symbol1 {
+  position: absolute;
+  top: -7.5%;
+  left: 16%;
+}
+.column4 .column1-testimonial .quote-symbol1 i {
+  font-size: 3rem;
+}
+.column4 .column1-testimonial p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.column4 .column1-testimonial h5 {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+.column4 .transaction-graph {
+  position: relative;
+}
+.column4 .transaction-graph .img5 {
+  position: absolute;
+  left: -9%;
+  bottom: 69%;
+}
+.column4 .transaction-graph .img6 {
+  position: absolute;
+  top: -27%;
+  left: 0.1%;
+}
+.column4 .transaction-graph .img7 {
+  position: absolute;
+  top: 42%;
+  left: -43.9%;
+}
+.column4 .transaction-graph .transaction-content {
+  background-color: #DBF1FA;
+  height: 540px;
+  width: 486px;
 }
 
 /*# sourceMappingURL=style.css.map */
