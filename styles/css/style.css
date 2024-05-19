@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 * {
-  font-family: "Manrope", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +17,7 @@ h1 {
 /* Base Styles */
 header {
   padding-top: 2rem;
-  height: 863px;
+  height: 859px;
   background: linear-gradient(292.12deg, #62BADA -35.02%, #C9E7F2 78.96%);
 }
 
@@ -585,13 +584,13 @@ input:focus::placeholder {
 .stats-section .stats-details .vertical-line::after {
   content: "";
   position: absolute;
-  top: -80px;
+  top: -71px;
   width: 1px;
   background-color: black;
   right: -35px;
   height: 256px;
 }
-.stats-section .stat-image img {
+.stats-section .stat-image {
   position: absolute;
   top: 15%;
   right: 0;
@@ -639,9 +638,6 @@ input:focus::placeholder {
     font-weight: 400;
   }
   .stats-details .vertical-line::after {
-    display: none;
-  }
-  img {
     display: none;
   }
 }
@@ -702,7 +698,7 @@ input:focus::placeholder {
   line-height: 3.6rem;
   font-weight: 600;
   height: 180px;
-  width: 368px;
+  width: 356px;
   margin-bottom: 3rem;
 }
 .testimonial-section .testimonial-content .testimonial-detail .testimonail-card .card-text h5 {
@@ -770,9 +766,9 @@ input:focus::placeholder {
   }
 }
 .feature-section {
-  margin-inline: 8rem;
+  margin-block: 8rem;
   background-color: #C9E7F2;
-  padding: 5rem 8rem;
+  padding: 8rem;
 }
 .feature-section p {
   font-size: 1.6rem;
@@ -906,7 +902,7 @@ input:focus::placeholder {
 }
 
 .about-us {
-  background-color: #F5F6F8;
+  background-color: #FAFBFF;
   padding: 5rem 5rem;
 }
 .about-us h2 {
@@ -1297,6 +1293,44 @@ input:focus::placeholder {
   position: absolute;
   top: -48%;
   right: -227%;
+}
+
+.software-partner {
+  padding: 5rem 8rem;
+  background-color: #F5F6F8;
+}
+.software-partner h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.software-partner .partner-detail {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+.software-partner .partner-detail .partner-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.software-partner .partner-detail .partner-list h4 {
+  font-size: 2rem;
+}
+.software-partner .partner-detail .partner-list h4 span {
+  font-size: 1.5rem;
+}
+.software-partner .partner-detail .partner-list .segment {
+  height: 20px;
+  width: 20px;
+}
+.software-partner .partner-detail .partner-list .protonet {
+  height: 20px;
+  width: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

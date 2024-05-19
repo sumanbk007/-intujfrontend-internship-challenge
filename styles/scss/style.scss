@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+
+
 *{
 
 
-    font-family: "Manrope",sans-serif;
+    // font-family: "Manrope",sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,7 +29,7 @@ h1{
 header{
 
     padding-top: 2rem;
-    height: 863px;
+    height: 859px;
 
      background: linear-gradient(292.12deg, #62BADA -35.02%, #C9E7F2 78.96%);;
 }
@@ -844,7 +846,7 @@ line-height: 31px;
         .vertical-line::after {
             content: "";
             position: absolute;
-            top: -80px;
+            top: -71px;
            
             width: 1px;
             background-color: black;
@@ -857,14 +859,15 @@ line-height: 31px;
 
 
 .stat-image{
-img {
+position: absolute;
+    top: 15%;
+    right: 0;
+    height: 120px
 
-        position: absolute;
-        top: 15%;
-        right: 0;
-        height: 120px
-    }
 
+// img {
+
+// }
 }
 
 
@@ -922,11 +925,6 @@ img {
             display: none;
         }
     }
-
-img{
-
-    display: none;
-}
 
 }
     
@@ -1012,7 +1010,7 @@ p{
     line-height: 3.6rem;
     font-weight: 600;
     height: 180px;
-    width: 368px;
+    width: 356px;
     margin-bottom: 3rem;
 }
 
@@ -1118,9 +1116,9 @@ font-weight: 600;
 
 .feature-section{
 
-    margin-inline: 8rem;
+    margin-block:8rem;
     background-color: #C9E7F2;
-    padding: 5rem 8rem;
+    padding: 8rem;
 
 
     p{
@@ -1339,7 +1337,7 @@ margin-bottom: 16px;
 .about-us{
 
 
-    background-color: #F5F6F8;
+    background-color: #FAFBFF;
     padding:  5rem 5rem;
     h2{
 
@@ -1930,6 +1928,64 @@ justify-content: center;
 }
 
 
+
+
+
+// software partner
+
+.software-partner{
+    padding: 5rem 8rem;
+    background-color: #F5F6F8;
+
+
+    h2{
+
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 3rem;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .partner-detail{
+display: flex;
+gap: 4rem;
+align-items: center;
+width: 100%;
+
+            .partner-list{
+
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                h4{
+
+                    font-size: 2rem;
+
+                    span{
+
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .segment{
+
+                    height: 20px;
+                    width: 20px;
+                   
+                }
+
+                .protonet{
+
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        
+    }
+}
 
 
 
