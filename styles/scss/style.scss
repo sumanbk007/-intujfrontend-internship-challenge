@@ -22,6 +22,17 @@ h1{
 
 
 /* Base Styles */
+
+
+header{
+
+    padding-top: 2rem;
+    height: 863px;
+
+     background: linear-gradient(292.12deg, #62BADA -35.02%, #C9E7F2 78.96%);;
+}
+
+
 .logo,
 .nav-link,
 .auth-link {
@@ -30,15 +41,36 @@ h1{
 }
 
 /* Layout Styles */
+
+nav{
+
+    height: 52px;
+    margin-bottom: 10rem;
+
+
+    .logo-container{
+
+        a{
+
+            font-size: 2rem;
+                line-height: 2.4rem;
+                font-weight: 700;
+        }
+    }
+}
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
 }
 
 .links-container {
     display: flex;
+        justify-content: space-between;
+    width: 790px;
+
+   
 }
 
 
@@ -47,6 +79,10 @@ h1{
 .auth-links {
     display: flex;
     align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    font-weight: 400;
 }
 
 .nav-link {
@@ -66,8 +102,11 @@ h1{
 .start-free {
    background: #4F46BA;;
     color: #fff;
-    padding: 10px 20px;
+  padding-top:15px;
     border-radius: 5px;
+    height: 5.2rem;
+        width: 13.7rem;
+        text-align: center;
 }
 
 /* State Styles */
@@ -1696,6 +1735,202 @@ width: 486px;
 
 
 }
+
+
+
+// header seection
+
+
+.hero-content{
+    position: relative;
+
+    display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+padding:0 8rem;
+    .hero-text{
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-left: 5rem;
+        
+        h1{
+
+            font-size: 6rem;
+        line-height: 8rem;
+        font-weight: 800;
+        }
+
+        p{
+
+            font-size: 2rem;
+        line-height: 3rem;
+        font-weight: 400;
+        }
+    
+
+                 .hero-cta-section {
+        
+
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-block: 1.5rem;
+                     button {
+        
+        
+                         height: 6rem;
+                         width: 16.2rem;
+                         background-color: #3734A9;
+                         border-radius: 3rem;
+                         border: none;
+                        font-size: 1.6rem;
+                            line-height: 3rem;
+                            font-weight: 400;
+                            color: #FFFFFF;
+
+                     }
+
+                     span{
+
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+
+
+                        i{
+
+                            font-size: 6rem;
+                            color: #22D497;
+                            
+                        }
+
+                        p{
+
+                            font-size: 1.7rem;
+                                line-height: 3rem;
+                                font-weight: 400;
+                                color: #3734A9;
+                        }
+                     }
+                 }
+
+   
+                                 .benefit-list {
+                
+
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2rem;
+                                     span {
+                
+                                         display: flex;
+                                         align-items: center;
+                                         justify-content: flex-start;
+                                         gap: .8rem;
+                
+                
+                                         i {
+                
+                                             color: #3734A9;
+                                             font-size: 1.8rem;
+                                         }
+                
+                                         p {
+                
+                                             font-size: 1.7rem;
+                                             line-height: 3rem;
+                                             font-weight: 400;
+                                         }
+                                     }}
+}
+
+
+.hero-image{
+
+        position: absolute;
+            left: 71%;
+            top: 10%;
+
+
+
+
+    .ecllipse{
+display: flex;
+align-items: center;
+justify-content: center;
+        height: 119.84px;
+        width: 119.84px;
+        border-radius: 50%;
+        background-color: #000000;
+    }
+
+   
+    
+
+            .img10 {
+            position: absolute;
+                top: -139%;
+                    left: -130%;
+    }
+
+                 .img12 {
+                    position: absolute;
+                    top: -44%;
+                        left: -160%;
+                        height: 690px;
+
+                 }
+
+                                 .img11{
+                                position: absolute;
+                                top: 81%;
+                                    left: -82%;
+                                    height: 539px;
+                                
+                                 }
+                                                                  .image-gallery {
+
+
+.img13 {
+
+        position: absolute;
+        top: 315%;
+            left: -790%;
+    }
+
+                                                                 .img14 {
+                                
+                                                    height: 151px;
+                                                                    transform: rotate(1deg);
+                                                                    position: absolute;
+                                                                    right: -226%;
+                                                                    top: 417%;
+                                                                 }
+
+
+                                                           .img15{  
+                                                                    position: absolute;
+                                                                    top: -48%;
+                                                                        right: -227%;
+                                                                    
+                                                           }
+
+
+
+
+
+}
+
+}
+}
+
+
+
 
 
 
