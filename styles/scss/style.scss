@@ -23,8 +23,7 @@ h1{
 }
 
 
-/* Base Styles */
-
+/* Header Styles */
 
 header{
 
@@ -32,92 +31,352 @@ header{
     height: 859px;
 
      background: linear-gradient(292.12deg, #62BADA -35.02%, #C9E7F2 78.96%);;
-}
 
 
-.logo,
-.nav-link,
-.auth-link {
-    text-decoration: none;
-    color: inherit;
-}
+    .logo,
+        .nav-link,
+        .auth-link {
+            text-decoration: none;
+            color: #000000;
+        }
 
-/* Layout Styles */
+.navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px;
+    }
 
-nav{
-
-    height: 52px;
-    margin-bottom: 10rem;
-
-
-    .logo-container{
-
-        a{
-
+    .logo-container {
+        a {
             font-size: 2rem;
-                line-height: 2.4rem;
-                font-weight: 700;
+            line-height: 2.4rem;
+            font-weight: 700;
         }
     }
-}
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 20px;
-}
 
-.links-container {
-    display: flex;
+    .links-container {
+        display: flex;
         justify-content: space-between;
-    width: 790px;
-
-   
-}
-
-
-
-.nav-links,
-.auth-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    font-weight: 400;
-}
-
-.nav-link {
-    margin: 0 10px;
-    transition: color 0.3s;
-
-    &:hover {
-        color: #555;
+        width: 790px;
     }
-}
 
-.auth-link {
-    margin-left: 10px;
-    transition: color 0.3s;
-}
+    .nav-links,
+    .auth-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        font-weight: 400;
+    }
 
-.start-free {
-   background: #4F46BA;;
-    color: #fff;
-  padding-top:15px;
-    border-radius: 5px;
-    height: 5.2rem;
+    .nav-item {
+        position: relative;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #555;
+        }
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        min-width: 160px;
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(-20px);
+
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+    }
+
+    .nav-item:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .auth-link {
+        margin-left: 10px;
+        transition: color 0.3s;
+    }
+
+    .start-free {
+        background: #4f46ba;
+        color: #fff;
+        padding-top: 15px;
+        border-radius: 5px;
+        height: 5.2rem;
         width: 13.7rem;
         text-align: center;
+    }
+
+    .toggle-button{
+
+        display: none;
+    button{
+
+        border: none;
+            background-color: transparent;
+    }
+        
+        i{
+font-size: 3rem;
+
+        }
+
+    }
+
+
+
+         .hero-content {
+            position: relative;
+    
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+            padding: 0 8rem;
+            margin-top: 8.5rem;
+    
+            .hero-text {
+    
+    
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                margin-left: 5rem;
+    
+                h1 {
+    
+                    font-size: 6rem;
+                    line-height: 8rem;
+                    font-weight: 800;
+                }
+    
+                p {
+    
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    font-weight: 400;
+                }
+    
+    
+                .hero-cta-section {
+    
+    
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    margin-block: 1.5rem;
+    
+                    button {
+    
+    
+                        height: 6rem;
+                        width: 16.2rem;
+                        background-color: #3734A9;
+                        border-radius: 3rem;
+                        border: none;
+                        font-size: 1.6rem;
+                        line-height: 3rem;
+                        font-weight: 400;
+                        color: #FFFFFF;
+    
+                    }
+    
+                    span {
+    
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+    
+    
+                        i {
+    
+                            font-size: 6rem;
+                            color: #22D497;
+    
+                        }
+    
+                        p {
+    
+                            font-size: 1.7rem;
+                            line-height: 3rem;
+                            font-weight: 400;
+                            color: #3734A9;
+                        }
+                    }
+                }
+    
+    
+                .benefit-list {
+    
+    
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+    
+                    span {
+    
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: .8rem;
+    
+    
+                        i {
+    
+                            color: #3734A9;
+                            font-size: 1.8rem;
+                        }
+    
+                        p {
+    
+                            font-size: 1.7rem;
+                            line-height: 3rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+    
+    
+            .hero-image {
+    
+                position: absolute;
+                left: 71%;
+                top: 12.5%;
+    
+    
+    
+    
+                .ecllipse {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 119.84px;
+                    width: 119.84px;
+                    border-radius: 50%;
+                    background-color: #000000;
+                }
+    
+    
+    
+    
+                .img10 {
+                    position: absolute;
+                    top: -139%;
+                    left: -130%;
+                }
+    
+                .img12 {
+                    position: absolute;
+                    top: -44%;
+                    left: -160%;
+                    height: 690px;
+    
+                }
+    
+                .img11 {
+                    position: absolute;
+                    top: 81%;
+                    left: -82%;
+                    height: 539px;
+    
+                }
+    
+                .image-gallery {
+    
+    
+                    .img13 {
+    
+                        position: absolute;
+                        top: 315%;
+                        left: -790%;
+                    }
+    
+                    .img14 {
+    
+                        height: 151px;
+                        transform: rotate(1deg);
+                        position: absolute;
+                        right: -226%;
+                        top: 417%;
+                    }
+    
+    
+                    .img15 {
+                        position: absolute;
+                        top: -48%;
+                        right: -227%;
+    
+                    }
+    
+    
+    
+    
+    
+                }
+    
+            }
+        }
 }
 
-/* State Styles */
-.auth-link:hover,
-.nav-link:hover {
-    text-decoration: underline;
-}
 
-/* This CSS example uses CSS custom properties for consistency and ease of maintenance. */
+@media screen and (max-width:768px) {
+
+    .toggle-button {
+
+        display: block !important;
+
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo-container {
+        a {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            font-weight: 700;
+        }
+    }
+
+    .links-container {
+        
+        display: none !important;
+       
+    }
+
+
+
+}
 
 
 
@@ -645,19 +904,20 @@ top: 1%;
 .recent-blog{
 
 margin-inline: 8rem;
+background-color: #FAFBFF;
 
             h3 {
                     font-size: 1.6rem;
                     font-weight: 700;
                     line-height: 3.6rem;
                     color: #000000;
-                    margin-top: 3rem;
+            
             
                 }
             
                 p {
             
-                    margin-block: 2rem;
+                
                     font-size: 2.9rem;
                     font-weight: 700;
                     line-height: 3.6rem;
@@ -670,12 +930,20 @@ margin-inline: 8rem;
 
         display: flex;
         flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
         .blog-post-cta{
 
  
+    background-color: #FFFFFF;
+        width: 655px;
+        height: 179px;
+        padding: 2rem;
 
+        p{
+
+            margin-bottom: 2rem;
+        }
 a{
 
     text-decoration: none;
@@ -694,13 +962,13 @@ a{
 margin-block: 2rem;
         display: flex;
         flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             gap: 2rem;
 
         .bog-card{
 
-            width: 382px;
-            height:436px;
+            // width: 382px;
+            // height:436px;
           
 
             p{
@@ -713,8 +981,10 @@ margin-block: 2rem;
 
 
 .blog-card-description{
-width: 382px;
+width: 311px;
     height: 195px;
+    background-color: #FFFFFF;
+    padding: 1rem;
 }
 
 
@@ -759,7 +1029,8 @@ width: 382px;
 
             .blog-post-cta {
 
-
+width: 318px;
+    height: auto;
 
                 a {
 
@@ -1775,7 +2046,7 @@ width: 486px;
     }
 .column4 {
 
-        gap: 2rem;
+        gap: 4rem;
     
 
         .live-track-features {
@@ -1926,6 +2197,7 @@ width: 486px;
     .track-container {
        
         height: auto;
+        margin-bottom: 5rem;
      
 
     }
@@ -2009,9 +2281,14 @@ font-size: 3.5rem;
                 
                 gap: 1rem !important;
 
+                i{
+
+                    font-size: 2rem !important;
+                }
+
                 p {
 
-                    font-size: 1.6rem;
+                    font-size: 1.5rem!important;
                   
                 }
             }
@@ -2076,13 +2353,15 @@ font-size: 3.5rem;
 
     flex-direction: column;
     margin: 4rem 1rem;
+    align-items: flex-start;
 
     .column1-detail{
 
     h2{
 
-    font-size: 3.5rem ;
-        line-height: 4rem ;
+font-size: 3.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
     }
 
 
@@ -2093,7 +2372,7 @@ font-size: 3.5rem;
         }
         font-size: 1.6rem;
         line-height: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
 
     }
 }
@@ -2142,196 +2421,6 @@ font-size: 3.5rem;
 
 
 
-// header seection
-
-
-.hero-content{
-    position: relative;
-
-    display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 2rem;
-        flex-wrap: wrap;
-padding:0 8rem;
-    .hero-text{
-
-
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        margin-left: 5rem;
-        
-        h1{
-
-            font-size: 6rem;
-        line-height: 8rem;
-        font-weight: 800;
-        }
-
-        p{
-
-            font-size: 2rem;
-        line-height: 3rem;
-        font-weight: 400;
-        }
-    
-
-                 .hero-cta-section {
-        
-
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    margin-block: 1.5rem;
-                     button {
-        
-        
-                         height: 6rem;
-                         width: 16.2rem;
-                         background-color: #3734A9;
-                         border-radius: 3rem;
-                         border: none;
-                        font-size: 1.6rem;
-                            line-height: 3rem;
-                            font-weight: 400;
-                            color: #FFFFFF;
-
-                     }
-
-                     span{
-
-                        display: flex;
-                        align-items: center;
-                        gap: 2rem;
-
-
-                        i{
-
-                            font-size: 6rem;
-                            color: #22D497;
-                            
-                        }
-
-                        p{
-
-                            font-size: 1.7rem;
-                                line-height: 3rem;
-                                font-weight: 400;
-                                color: #3734A9;
-                        }
-                     }
-                 }
-
-   
-                                 .benefit-list {
-                
-
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 2rem;
-                                     span {
-                
-                                         display: flex;
-                                         align-items: center;
-                                         justify-content: flex-start;
-                                         gap: .8rem;
-                
-                
-                                         i {
-                
-                                             color: #3734A9;
-                                             font-size: 1.8rem;
-                                         }
-                
-                                         p {
-                
-                                             font-size: 1.7rem;
-                                             line-height: 3rem;
-                                             font-weight: 400;
-                                         }
-                                     }}
-}
-
-
-.hero-image{
-
-        position: absolute;
-            left: 71%;
-            top: 10%;
-
-
-
-
-    .ecllipse{
-display: flex;
-align-items: center;
-justify-content: center;
-        height: 119.84px;
-        width: 119.84px;
-        border-radius: 50%;
-        background-color: #000000;
-    }
-
-   
-    
-
-            .img10 {
-            position: absolute;
-                top: -139%;
-                    left: -130%;
-    }
-
-                 .img12 {
-                    position: absolute;
-                    top: -44%;
-                        left: -160%;
-                        height: 690px;
-
-                 }
-
-                                 .img11{
-                                position: absolute;
-                                top: 81%;
-                                    left: -82%;
-                                    height: 539px;
-                                
-                                 }
-                                                                  .image-gallery {
-
-
-.img13 {
-
-        position: absolute;
-        top: 315%;
-            left: -790%;
-    }
-
-                                                                 .img14 {
-                                
-                                                    height: 151px;
-                                                                    transform: rotate(1deg);
-                                                                    position: absolute;
-                                                                    right: -226%;
-                                                                    top: 417%;
-                                                                 }
-
-
-                                                           .img15{  
-                                                                    position: absolute;
-                                                                    top: -48%;
-                                                                        right: -227%;
-                                                                    
-                                                           }
-
-
-
-
-
-}
-
-}
-}
 
 
 
@@ -2406,12 +2495,12 @@ width: 100%;
     
             font-size: 1.8rem;
                 line-height: 2.5rem;
-                margin-bottom: 3rem;
+                margin-bottom: 6rem;
             }
     
             .partner-detail {
                 flex-direction: column;
-                gap: 3rem;
+                gap: 2rem;
                 align-items: flex-start;
         
     
@@ -2422,6 +2511,108 @@ width: 100%;
 }
 
 
+
+
+// Header-section responsiveness 
+
+@media screen and (max-width:768px) {
+
+
+    .hero-content {
+
+        margin-top: 2rem;
+    }
+
+
+   
+
+
+    header {
+
+        padding-top: 2rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        .hero-content{
+
+            padding-inline: 4rem;
+        }
+
+        .hero-image {
+            display: none;
+        }
+    }
+
+        .hero-text {
+
+    
+            text-align: center;
+            margin-left: 0 !important;
+    
+    
+            h1 {
+    
+                font-size: 3rem !important;
+                line-height: 3rem !important;
+                text-align: center;
+            }
+    
+            p {
+    
+                br {
+    
+                    display: none;
+                }
+    
+                font-size: 2rem;
+                line-height: 2.5rem !important;
+                font-weight: 400;
+            }
+    
+    
+            .hero-cta-section {
+    
+    
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                gap: 1rem;
+                margin-block: 1.5rem;
+    
+    
+                span {
+    
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem !important;
+    
+    
+                    i {
+    
+                        font-size: 4rem !important;
+                        color: #22D497;
+    
+                    }
+    
+                    p {
+    
+                        font-size: 1.7rem;
+                        line-height: 3rem;
+                        font-weight: 400;
+                        color: #3734A9;
+                    }
+                }
+            }
+    
+    
+            .benefit-list {
+                margin-bottom: 2rem;
+    
+                
+            }
+        }
+}
 
 
 
