@@ -1231,13 +1231,10 @@ input:focus::placeholder {
   .column4 .column1-testimonial p {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
   }
   .column4 .column1-testimonial h5 {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    font-weight: 600;
   }
   .column4 .transaction-graph {
     left: -21%;
@@ -1258,6 +1255,149 @@ input:focus::placeholder {
   }
   .column4 .transaction-graph .transaction-content {
     width: 312px;
+  }
+  .column3 {
+    margin-block: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .column3 .img1 {
+    position: absolute;
+    top: 0;
+    left: 0.1%;
+  }
+  .column3 .img2 {
+    position: absolute;
+    top: 56.5%;
+    left: 0.1%;
+  }
+  .column3 .img3 {
+    position: absolute;
+    top: 25%;
+    left: 78.4%;
+  }
+  .column3 .img4 {
+    position: absolute;
+    top: -18%;
+    left: 76.3%;
+  }
+  .column3 .track-container {
+    height: auto;
+  }
+  .column3 .live-track-payment {
+    width: 310px;
+    height: 315px;
+    padding-block: 1rem;
+  }
+  .column3 .live-track-payment .user-content-row2 {
+    margin-left: 4.5rem !important;
+  }
+  .column3 .live-track-payment .user-content-row3 {
+    margin-left: 2rem !important;
+  }
+  .column3 .live-track-payment .user-contnet {
+    width: 280px;
+    height: 58px;
+    padding: 1rem;
+  }
+  .column3 .live-track-payment .user-contnet .user-detail button {
+    height: 24px;
+    width: 84px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .column3 .live-track-payment .user-contnet .user-detail p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: 2px;
+  }
+  .column3 .live-track-features {
+    width: 333px;
+    height: auto;
+  }
+  .column3 .live-track-features h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .column3 p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .column3 hr {
+    width: 100%;
+  }
+  .column3 .benefit-list span {
+    gap: 1rem !important;
+  }
+  .column3 .benefit-list span p {
+    font-size: 1.6rem;
+  }
+  .column2 {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .column2 .column2-detail {
+    width: 271px;
+    height: 258px;
+    padding-inline: 1rem;
+  }
+  .column2 .column2-detail p {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  .column2 .column2-detail p br {
+    display: none;
+  }
+  .column2 .column2-detail .column2-card {
+    gap: 2rem;
+  }
+  .column2 .column2-detail .column2-card i {
+    font-size: 4rem;
+  }
+  .column2 .column2-detail .column2-card h3 {
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+  }
+  .column2 .column2-detail .column2-card p {
+    line-height: 2rem;
+  }
+  .column1 {
+    flex-direction: column;
+    margin: 4rem 1rem;
+  }
+  .column1 .column1-detail h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+  .column1 .column1-detail p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+  .column1 .column1-detail p br {
+    display: none;
+  }
+  .column1 .column1-testimonial {
+    width: 315px;
+    height: 140px;
+    flex-direction: column;
+  }
+  .column1 .column1-testimonial .quote-symbol1 {
+    position: absolute;
+    top: -7.5%;
+    left: 16%;
+  }
+  .column1 .column1-testimonial .quote-symbol1 i {
+    font-size: 2.5rem;
+  }
+  .column1 .column1-testimonial p {
+    line-height: 2rem;
+  }
+  .column1 .column1-testimonial h5 {
+    line-height: 1.2rem;
   }
 }
 .hero-content {
@@ -1422,6 +1562,22 @@ input:focus::placeholder {
 .software-partner .partner-detail .partner-list .protonet {
   height: 20px;
   width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .software-partner {
+    padding: 3rem 8rem;
+  }
+  .software-partner h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .software-partner .partner-detail {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1830,14 +1830,13 @@ width: 486px;
 
                 font-size: 1.5rem;
                 line-height: 2.2rem;
-                font-weight: 400;
-                margin-bottom: 2rem;
+                
             }
 
             h5 {
                 font-size: 1.5rem;
                 line-height: 2.2rem;
-                font-weight: 600;
+                
 
             }
 
@@ -1883,7 +1882,264 @@ width: 486px;
 
 
     }
+
+
+.column3 {
+
+
+    margin-block: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+
+    .img1 {
+        position: absolute;
+        top: 0;
+        left: 0.1%
+    }
+
+    .img2 {
+        position: absolute;
+        top: 56.5%;
+            left: 0.1%;
+    }
+
+    .img3 {
+
+        position: absolute;
+        top: 25%;
+        left: 78.4%;
+    }
+
+
+    .img4 {
+
+        position: absolute;
+        top: -18%;
+            left: 76.3%;
+    }
+
+
+    .track-container {
+       
+        height: auto;
+     
+
+    }
+
+    .live-track-payment {
+            width: 310px;
+                height: 315px;
+                padding-block: 1rem;
+
+
+                .user-content-row2{
+
+                   margin-left: 4.5rem !important;
+                }
+
+                                 .user-content-row3 {
+                
+                                     margin-left: 2rem !important;
+                                 }
+                
+
+
+
+        .user-contnet {
+
+            width: 280px;
+                height: 58px;
+                padding: 1rem;
+
+
+
+            .user-detail {
+
+                button {
+                    height: 24px;
+                        width: 84px;
+                        
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                     
+
+                }
+
+                p {
+
+                font-size: 1.4rem;
+                    line-height: 2rem;
+                    margin-top: 2px;
+                }
+            }
+
+        }
+    }
+
+
+    .live-track-features {
+    width: 333px;
+        height: auto;
+
+
+        h2 {
+font-size: 3.5rem;
+    line-height: 4rem;
 }
+        }
+
+        p {
+            font-size: 1.6rem;
+                line-height: 2rem;
+
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        .benefit-list {
+
+
+            span {
+                
+                gap: 1rem !important;
+
+                p {
+
+                    font-size: 1.6rem;
+                  
+                }
+            }
+        }
+
+
+    }
+
+
+
+
+.column2 {
+
+    flex-direction: column;
+    gap: 2rem;
+
+
+    .column2-detail {
+    width: 271px;
+        height: 258px;
+        padding-inline: 1rem;
+    
+        p {
+
+            br{
+                display: none;
+            }
+
+            font-size: 2.2rem;
+            line-height: 3rem;
+        }
+
+
+        .column2-card {
+            gap: 2rem;
+
+
+            i {
+
+                font-size: 4rem;
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                    line-height: 2.4rem;
+
+            }
+
+            p {
+
+
+           
+                    line-height: 2rem;
+            }
+        }
+    }
+
+}
+
+
+.column1 {
+
+    flex-direction: column;
+    margin: 4rem 1rem;
+
+    .column1-detail{
+
+    h2{
+
+    font-size: 3.5rem ;
+        line-height: 4rem ;
+    }
+
+
+    p {
+
+        br{
+            display: none;
+        }
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+
+    }
+}
+
+
+.column1-testimonial {
+
+
+    width: 315px;
+        height: 140px;
+    flex-direction: column;
+
+    .quote-symbol1 {
+
+
+
+        position: absolute;
+        top: -7.5%;
+        left: 16%;
+
+        i {
+
+            font-size: 2.5rem;
+        }
+    }
+
+    p {
+
+        line-height: 2rem;
+    }
+
+    h5 {
+     
+        line-height: 1.2rem;
+   
+
+    }
+
+}
+
+}
+
+
+}
+   
+
 
 
 // header seection
@@ -2136,6 +2392,35 @@ width: 100%;
         
     }
 }
+
+
+@media screen and (max-width:768px){
+
+
+    .software-partner {
+            padding: 3rem 8rem;
+           
+    
+    
+            h2 {
+    
+            font-size: 1.8rem;
+                line-height: 2.5rem;
+                margin-bottom: 3rem;
+            }
+    
+            .partner-detail {
+                flex-direction: column;
+                gap: 3rem;
+                align-items: flex-start;
+        
+    
+               
+                }
+    
+            }
+}
+
 
 
 
