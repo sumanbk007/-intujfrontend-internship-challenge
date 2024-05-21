@@ -21,7 +21,7 @@
         </div>
 
         <!-- Nav Links and Authentication Links Container (Links Container) -->
-        <div class="links-container">
+        <div class="links-container" id="links-container">
           <!-- Navigation Links -->
           <div class="nav-links">
             <div class="nav-item">
@@ -65,9 +65,13 @@
             <a href="/signin" class="auth-link">Sign In</a>
             <a href="/start-free" class="auth-link start-free">Start Free</a>
           </div>
+
+          <span class="cross-mark" id="cross-mark">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </span>
         </div>
 
-        <div class="toggle-button">
+        <div class="toggle-button" id="toggle-button">
           <button><i class="fa-solid fa-bars-staggered"></i></button>
         </div>
       </nav>
@@ -504,6 +508,95 @@
         </div>
       </article>
     </section>
+
+    <!-- FAQ section -->
+
+    <div class="faq">
+      <div class="faq-content">
+        <h1>Fequently <br />asked questions</h1>
+
+        <div class="faq-container">
+          <section class="faq-detail">
+            <article class="question" id="question1">
+              <div class="question-header">
+                <h2 class="question-title">
+                  The expense windows adapted sir. Wrong widen drawn.
+                </h2>
+                <button class="toggle-answer">+</button>
+              </div>
+              <div class="answer">
+                Offending belonging promotion provision an be oh consulted
+                ourselves it. Blessing welcomed ladyship she met humoured sir
+                breeding her.
+              </div>
+            </article>
+            <article class="question" id="question2">
+              <div class="question-header">
+                <h2 class="question-title">
+                  Six curiosity day assurance bed necessary?
+                </h2>
+                <button class="toggle-answer">+</button>
+              </div>
+              <div class="answer">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </div>
+            </article>
+            <article class="question" id="question3">
+              <div class="question-header">
+                <h2 class="question-title">
+                  Produce say the ten moments parties?
+                </h2>
+                <button class="toggle-answer">+</button>
+              </div>
+              <div class="answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                aut eligendi, animi adipisci cum ratione.
+              </div>
+            </article>
+            <article class="question" id="question4">
+              <div class="question-header">
+                <h2 class="question-title">
+                  Simple innate summer fat appear basket his desire joy?
+                </h2>
+                <button class="toggle-answer">+</button>
+              </div>
+              <div class="answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                aut eligendi, animi adipisci cum ratione.
+              </div>
+            </article>
+            <article class="question" id="question5">
+              <div class="question-header">
+                <h2 class="question-title">
+                  Outward clothes promise at gravity do excited?
+                </h2>
+                <button class="toggle-answer">+</button>
+              </div>
+              <div class="answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                aut eligendi, animi adipisci cum ratione.
+              </div>
+            </article>
+            <!-- Add more questions and answers as needed -->
+          </section>
+
+          <div class="faq-direct-mail">
+            <i class="fa-solid fa-message message-icon"></i>
+            <h3>Do you have more questions?</h3>
+            <p>
+              End-to-end payments and financial <br />management in a single
+              solution. Meet the <br />right platform to help realize.
+            </p>
+            <button>Shoot a Direct Mail</button>
+          </div>
+        </div>
+      </div>
+      <div class="faq-image">
+        <img class="faq-img1" src="/images//faq1.png" alt="" />
+        <img class="faq-img2" src="/images/faq2.png" alt="" />
+      </div>
+    </div>
     <!-- Call to Action section  -->
 
     <section class="call-to-action">
@@ -731,5 +824,7 @@
         Copyright @ AR Shakir 2022. All Rights Reserved.
       </div>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>

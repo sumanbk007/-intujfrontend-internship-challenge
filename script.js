@@ -27,3 +27,26 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+//Toggle button
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("toggle-button");
+  const linksContainer = document.getElementById("links-container");
+  const crossMark = document.getElementById("cross-mark");
+
+  toggleButton.addEventListener("click", () => {
+    if (
+      linksContainer.style.left === "-100%" ||
+      linksContainer.style.left === ""
+    ) {
+      linksContainer.style.display = "flex";
+      linksContainer.style.left = "0";
+    }
+  });
+
+  crossMark.addEventListener("click", () => {
+    linksContainer.style.left = "-100%";
+    linksContainer.style.display = "none";
+  });
+});
