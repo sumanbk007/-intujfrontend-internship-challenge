@@ -1204,6 +1204,7 @@ input:focus::placeholder {
 @media screen and (max-width: 768px) {
   .feature-section {
     margin-inline: 0;
+    margin-block: 3rem;
     padding: 2rem 1rem;
   }
   .feature-section h1 {
@@ -1550,7 +1551,7 @@ input:focus::placeholder {
     padding: 1rem 2rem;
   }
   .about-us .column4 {
-    gap: 4rem;
+    gap: 7rem;
   }
   .about-us .column4 .live-track-features {
     width: 490px;
@@ -1593,24 +1594,25 @@ input:focus::placeholder {
     line-height: 2.2rem;
   }
   .about-us .column4 .transaction-graph {
-    left: -21%;
+    left: 0;
   }
   .about-us .column4 .transaction-graph .img5 {
-    left: 16%;
-    bottom: 51%;
+    left: -4%;
+    bottom: 62%;
   }
   .about-us .column4 .transaction-graph .img6 {
-    top: -11%;
-    left: 18.1%;
-    height: 600px;
+    top: -20%;
+    left: 19.1%;
+    height: 451px;
   }
   .about-us .column4 .transaction-graph .img7 {
-    top: 64%;
-    left: -4.9%;
-    height: 361px;
+    top: 49%;
+    left: -27.9%;
+    height: 355px;
   }
   .about-us .column4 .transaction-graph .transaction-content {
-    width: 312px;
+    width: 358px;
+    height: 377px;
   }
   .about-us .column3 {
     margin-block: 8rem;

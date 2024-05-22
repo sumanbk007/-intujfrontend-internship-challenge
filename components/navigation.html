@@ -11,7 +11,6 @@
     ></script>
   </head>
   <body>
-    <!-- Navbar Container -->
     <nav class="navbar">
       <!-- Logo and Name (Logo Container) -->
       <div class="logo-container">
@@ -19,7 +18,7 @@
       </div>
 
       <!-- Nav Links and Authentication Links Container (Links Container) -->
-      <div class="links-container">
+      <div class="links-container" id="links-container">
         <!-- Navigation Links -->
         <div class="nav-links">
           <div class="nav-item">
@@ -63,9 +62,13 @@
           <a href="/signin" class="auth-link">Sign In</a>
           <a href="/start-free" class="auth-link start-free">Start Free</a>
         </div>
+
+        <span class="cross-mark" id="cross-mark">
+          <i class="fa-solid fa-circle-xmark"></i>
+        </span>
       </div>
 
-      <div class="toggle-button">
+      <div class="toggle-button" id="toggle-button">
         <button><i class="fa-solid fa-bars-staggered"></i></button>
       </div>
     </nav>

@@ -1901,6 +1901,7 @@ margin-bottom: 16px;
     .feature-section {
     
             margin-inline: 0;
+            margin-block: 3rem;
             padding: 2rem 1rem;
     
             h1{
@@ -2437,7 +2438,7 @@ width: 486px;
     
 .column4 {
 
-        gap: 4rem;
+        gap: 7rem;
     
 
         .live-track-features {
@@ -2511,32 +2512,34 @@ width: 486px;
         .transaction-graph {
 
           
-            left: -21%;
+            left: 0;
 
 
 
             .img5 {
-            left: 16%;
-                bottom: 51%;
+            left: -4%;
+                bottom: 62%;
             }
 
             .img6 {
-                    top: -11%;
-                        left: 18.1%;
-                    height: 600px;
+                    top: -20%;
+                        left: 19.1%;
+                        height: 451px;
+                   
             }
 
             .img7 {
-                    top: 64%;
-                        left: -4.9%;
-                    height: 361px;
-            }
+                    top: 49%;
+                        left: -27.9%;
+                        height: 355px;
+                    }
 
 
 
 
             .transaction-content {
-                width: 312px;
+         width: 358px;
+         height: 377px;
 
             }
 
