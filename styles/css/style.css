@@ -1084,7 +1084,7 @@ input:focus::placeholder {
     text-align: center;
   }
   .testimonial-section h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-block: 1rem;
   }
   .testimonial-section p {
@@ -1092,12 +1092,14 @@ input:focus::placeholder {
     line-height: 2rem;
     margin-bottom: 3rem;
   }
+  .testimonial-section p br {
+    display: none;
+  }
   .testimonial-section .testimonial-style-image {
     display: none;
   }
   .testimonial-section .testimonial-content {
     flex-direction: column;
-    /* Arrange testimonial cards in a column */
     gap: 2rem;
   }
   .testimonial-section .testimonial-content .quote-symbol1,
@@ -1114,31 +1116,38 @@ input:focus::placeholder {
     margin-bottom: 1rem;
   }
   .testimonial-section .testimonial-content .testimonial-detail .card-image {
-    width: auto;
-    height: 200px;
+    width: 150px;
+    height: 165px;
+    border-radius: 1rem;
   }
   .testimonial-section .testimonial-content .testimonial-detail .card-image img {
     height: 100%;
+    width: 100%;
+    border-radius: 1rem;
   }
   .testimonial-section .testimonial-content .testimonial-detail .testimonail-card {
     border: 1px solid #CFCFCF;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
-    width: 300px;
-    flex-direction: column;
+    width: 260px;
+    flex-direction: column-reverse;
     height: auto;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     border-radius: 1rem;
   }
   .testimonial-section .testimonial-content .testimonial-detail .testimonail-card .card-text p {
     font-size: 1.5rem;
-    line-height: 2.6rem;
+    line-height: 2rem;
     font-weight: 600;
     height: auto;
     width: 250px;
     margin-bottom: 1rem;
+  }
+  .testimonial-section .testimonial-content .testimonial-detail .testimonail-card .card-text h5 {
+    font-size: 1.7rem;
+    line-height: 2rem;
   }
 }
 .feature-section {
@@ -1703,28 +1712,30 @@ input:focus::placeholder {
   }
   .about-us .column2 .column2-detail {
     width: 271px;
-    height: 258px;
-    padding-inline: 1rem;
+    height: 300px;
+    padding: 1rem;
+    justify-content: space-evenly;
   }
   .about-us .column2 .column2-detail p {
-    font-size: 2.2rem;
-    line-height: 3rem;
-  }
-  .about-us .column2 .column2-detail p br {
-    display: none;
+    font-size: 2rem;
+    line-height: 2rem;
   }
   .about-us .column2 .column2-detail .column2-card {
     gap: 2rem;
   }
   .about-us .column2 .column2-detail .column2-card i {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .about-us .column2 .column2-detail .column2-card h3 {
-    font-size: 2.5rem;
-    line-height: 2.4rem;
+    font-size: 2.1rem;
+    line-height: 2rem;
   }
   .about-us .column2 .column2-detail .column2-card p {
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .about-us .column2 .column2-detail .column2-card p br {
+    display: none;
   }
   .about-us .column1 {
     flex-direction: column;
@@ -1746,7 +1757,7 @@ input:focus::placeholder {
   }
   .about-us .column1 .column1-testimonial {
     width: 315px;
-    height: 140px;
+    height: 150px;
     flex-direction: column;
   }
   .about-us .column1 .column1-testimonial .quote-symbol1 {
